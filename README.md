@@ -35,7 +35,7 @@ This project simulates a real-world analytics workflow to uncover trends in cust
 
 | KPI Dashboard | CLV Modeling | A/B Test Simulation |
 |---------------|--------------|---------------------|
-| ![kpi](assets/KPI_analysis/total_sales_over_time.png) | ![clv](assets/customer_analytics/feature_importance_plot.png) | ![ab](assets/ab_testing/ab_simulation_lift_distribution.png) |
+| ![kpi](assets/KPI_analysis/correlation_matrix_of_numeric_features.png) | ![clv](assets/customer_analytics/feature_importance_plot.png) | ![ab](assets/ab_testing/ab_simulation_lift_distribution.png) |
 
 ---
 
