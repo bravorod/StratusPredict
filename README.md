@@ -48,10 +48,10 @@ Explore KPIs, run simulated A/B tests, and uncover customer insights in an inter
         </tr>
       </table>
     </td>
-        <td align="center">
+    <td align="center">
       <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png"
            style="height:350px; min-width:350px;" />
-    </td>
+      </td>
     <td align="center">
       <img src="assets/ab_testing/ab_simulation_lift_distribution.png"
            style="height:350px; min-width:350px;" />
