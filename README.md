@@ -35,20 +35,29 @@ Explore KPIs, run simulated A/B tests, and uncover customer insights in an inter
   </tr>
   <tr>
     <td align="center">
-      <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png" style="width:250px; height:200px;" />
+      <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png" height="250"/>
     </td>
     <td align="center">
-      <img src="assets/customer_analytics/customer_segments_by_behavior_clusters.png" style="width:200px; height:200px;" />
-      <img src="assets/customer_analytics/pca_projection_of_customer_segments.png" style="width:200px; height:200px;" />
+      <table>
+        <tr>
+          <td>
+            <img src="assets/customer_analytics/customer_segments_by_behavior_clusters.png" height="250"/>
+          </td>
+          <td>
+            <img src="assets/customer_analytics/pca_projection_of_customer_segments.png" height="250"/>
+          </td>
+        </tr>
+      </table>
     </td>
     <td align="center">
-      <img src="assets/ab_testing/ab_simulation_lift_distribution.png" style="width:250px; height:200px;" />
+      <img src="assets/ab_testing/ab_simulation_lift_distribution.png" height="250"/>
     </td>
     <td align="center">
-      <img src="assets/customer_analytics/feature_importance_plot.png" style="width:250px; height:200px;" />
+      <img src="assets/customer_analytics/feature_importance_plot.png" height="250"/>
     </td>
   </tr>
 </table>
+
 
 
 ---
