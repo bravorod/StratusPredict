@@ -34,17 +34,17 @@ Explore KPIs, run simulated A/B tests, and uncover customer insights in an inter
     <th>CLV Modeling</th>
   </tr>
   <tr>
-    <td>
+    <td align="center">
       <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png" style="width:250px; height:200px;" />
     </td>
-    <td>
-      <img src="assets/customer_analytics/customer_segments_by_behavior_clusters.png" style="width:120px; height:200px;" />
-      <img src="assets/customer_analytics/pca_projection_of_customer_segments.png" style="width:120px; height:200px;" />
+    <td align="center">
+      <img src="assets/customer_analytics/customer_segments_by_behavior_clusters.png" style="width:125px; height:200px;" />
+      <img src="assets/customer_analytics/pca_projection_of_customer_segments.png" style="width:125px; height:200px;" />
     </td>
-    <td>
+    <td align="center">
       <img src="assets/ab_testing/ab_simulation_lift_distribution.png" style="width:250px; height:200px;" />
     </td>
-    <td>
+    <td align="center">
       <img src="assets/customer_analytics/feature_importance_plot.png" style="width:250px; height:200px;" />
     </td>
   </tr>
