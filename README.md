@@ -18,16 +18,10 @@ This project simulates a real-world analytics workflow to uncover trends in cust
 
 ---
 
-## Modules Included
+## Live Demo on Streamlit Cloud
 
-| Module                       | Description                                                   |
-|------------------------------|---------------------------------------------------------------|
-| **KPI Dashboard**            | Visualizes sales, transaction patterns, payment methods       |
-| **A/B Testing (Single Run)** | Measures lift and significance across 5 product categories    |
-| **A/B Testing (Simulation)** | 100 simulation runs with lift variability distribution        |
-| **Customer Segmentation**    | Clustering using Recency, Frequency, Monetary (RFM) metrics   |
-| **CLV Modeling**             | Predicts future customer value using ML                       |
-| **Sales Forecasting**        | Predicts future revenue using time series decomposition       |
+Explore KPIs, run simulated A/B tests, and uncover customer insights in an interactive interface.  
+[Live App](https://temp-url.com) 
 
 ---
 
@@ -47,10 +41,16 @@ This project simulates a real-world analytics workflow to uncover trends in cust
 
 ---
 
-## Live Demo on Streamlit Cloud
+## Modules Included
 
-Explore KPIs, run simulated A/B tests, and uncover customer insights in an interactive interface.  
-[Live App](https://temp-url.com) 
+| Module                       | Description                                                   |
+|------------------------------|---------------------------------------------------------------|
+| **KPI Dashboard**            | Visualizes sales, transaction patterns, payment methods       |
+| **A/B Testing (Single Run)** | Measures lift and significance across 5 product categories    |
+| **A/B Testing (Simulation)** | 100 simulation runs with lift variability distribution        |
+| **Customer Segmentation**    | Clustering using Recency, Frequency, Monetary (RFM) metrics   |
+| **CLV Modeling**             | Predicts future customer value using ML                       |
+| **Sales Forecasting**        | Predicts future revenue using time series decomposition       |
 
 ---
 
