@@ -28,16 +28,12 @@ Explore KPIs, run simulated A/B tests, and uncover customer insights in an inter
 ## Dashboard Preview
 <table>
   <tr>
-    <th>KPI Dashboard</th>
     <th>Customer Segmentation</th>
+    <th>KPI Dashboard</th>
     <th>A/B Test Simulation</th>
     <th>CLV Modeling</th>
   </tr>
   <tr>
-    <td align="center">
-      <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png"
-           style="height:350px; min-width:350px;" />
-    </td>
     <td align="center">
       <table>
         <tr>
@@ -52,13 +48,17 @@ Explore KPIs, run simulated A/B tests, and uncover customer insights in an inter
         </tr>
       </table>
     </td>
+        <td align="center">
+      <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png"
+           style="height:350px; min-width:350px;" />
+    </td>
     <td align="center">
       <img src="assets/ab_testing/ab_simulation_lift_distribution.png"
-           style="height:350px; min-width:150px;" />
+           style="height:350px; min-width:350px;" />
     </td>
     <td align="center">
       <img src="assets/customer_analytics/feature_importance_plot.png"
-           style="height:350px; min-width:100px;" />
+           style="height:350px; min-width:350px;" />
     </td>
   </tr>
 </table>
