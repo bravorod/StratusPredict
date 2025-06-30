@@ -1,5 +1,8 @@
 
-<img src="https://raw.githubusercontent.com/rodrigo-bravo/ecommerce-data-analytics-case-study/main/assets/banner.png" alt="Ecommerce Intelligence Dashboard" style="width:100%;">
+<h1 align="center">
+<strong>Data Analytics Case-Study</strong>
+</h1>
+<img src="https://raw.githubusercontent.com/rodrigo-bravo/ecommerce-data-analytics-case-study/main/assets/banner_v2.png" alt="Ecommerce Intelligence Dashboard" style="width:100%;">
 
 <p align="center">
 <a href="https://ecommerce-intelligence-dashboard.streamlit.app/"><strong>🔗 Launch Live App</strong></a> 
