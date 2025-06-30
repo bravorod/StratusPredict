@@ -1,125 +1,66 @@
-# E-commerce Data Analytics Case Study Dashboard
+# Ecommerce Intelligence Dashboard
 
-An interactive data analytics dashboard built in **Streamlit**, showcasing real-world **business intelligence**, **A/B testing**, **customer segmentation**, and **sales forecasting** insights via Jupyter Notebooks on simulated e-commerce data (10,000 sampled from 10M+ transaction records).
-
----
-
-## Project Summary
-
-This project simulates a real-world analytics workflow to uncover trends in customer behavior, optimize marketing strategy, and improve revenue performance. It demonstrates skills in:
-
-- Data preprocessing & feature engineering  
-- KPI tracking & dashboard development  
-- A/B testing (single run & simulation-based inference)  
-- Customer segmentation using KMeans & PCA  
-- Customer Lifetime Value modeling using regression  
-- Time series forecasting with Prophet  
-- Visual storytelling using Plotly & Matplotlib  
+**:rocket: Live Demo:** [https://ecommerce-intelligence-dashboard.streamlit.app/](https://ecommerce-intelligence-dashboard.streamlit.app/)  
+**Tech Stack:** Python · Streamlit · Plotly · scikit-learn · Prophet · pandas · numpy · PIL
 
 ---
 
-## Live Demo on Streamlit Cloud
+## :bar_chart: Overview
 
-Explore KPIs, run simulated A/B tests, and uncover customer insights in an interactive interface.  
-[Live App](https://temp-url.com) 
+The **Ecommerce Intelligence Dashboard** is a production-ready, modular analytics app that simulates a real-world data analytics workflow across five core modules:
 
----
+- KPI Monitoring
+- A/B Testing (single + simulation)
+- Customer Segmentation
+- CLV Modeling
+- Time Series Forecasting
 
-## Dashboard Preview
-<table>
-  <tr>
-    <th>Customer Segmentation</th>
-    <th>KPI Dashboard</th>
-    <th>A/B Test Simulation</th>
-    <th>CLV Modeling</th>
-  </tr>
-  <tr>
-    <td align="center">
-      <table>
-        <tr>
-          <td>
-            <img src="assets/customer_analytics/customer_segments_by_behavior_clusters.png"
-                 style="height:350px; min-width:250px;" />
-          </td>
-          <td>
-            <img src="assets/customer_analytics/pca_projection_of_customer_segments.png"
-                 style="height:350px; min-width:250px;" />
-          </td>
-        </tr>
-      </table>
-    </td>
-    <td align="center">
-      <img src="assets/KPI_analysis/correlation_matrix_of_numeric_features.png"
-           style="height:350px; min-width:350px;" />
-      </td>
-    <td align="center">
-      <img src="assets/ab_testing/ab_simulation_lift_distribution.png"
-           style="height:350px; min-width:350px;" />
-    </td>
-    <td align="center">
-      <img src="assets/customer_analytics/feature_importance_plot.png"
-           style="height:350px; min-width:350px;" />
-    </td>
-  </tr>
-</table>
-
-
-
+This project is designed to showcase end-to-end **data analysis**, **machine learning**, and **business intelligence** in a single interactive experience.
 
 ---
 
-## Tech Stack
+## :triangular_ruler: Key Features
 
-- **Languages:** Python, Markdown  
-- **Libraries:** Pandas, NumPy, Scikit-learn, Plotly, Matplotlib, Seaborn, Prophet, Streamlit  
-- **Tools:** Jupyter Notebook, Git, GitHub, Streamlit Cloud  
+### 1. KPI Dashboard
+- Real-time filtering of transactional data
+- KPIs: Total Revenue, Average Order Value, Transactions
+- Visuals: Revenue over time, payment method distribution, revenue by category
+- Actionable insights around pricing strategy and product performance
 
----
+### 2. A/B Testing
+- **Single Experiment Module**: Conversion lift, confidence intervals, z-test results
+- **Simulation Module**: 100-run variability simulation of statistical lift
+- Category-level interpretation and rollout recommendations
 
-## Modules Included
+### 3. Customer Segmentation
+- K-means clustering based on total spend, frequency, recency
+- PCA visualization of behavioral clusters
+- Strategic implications for marketing, churn prevention, and campaign targeting
 
-| Module                       | Description                                                   |
-|------------------------------|---------------------------------------------------------------|
-| **KPI Dashboard**            | Visualizes sales, transaction patterns, payment methods       |
-| **A/B Testing (Single Run)** | Measures lift and significance across 5 product categories    |
-| **A/B Testing (Simulation)** | 100 simulation runs with lift variability distribution        |
-| **Customer Segmentation**    | Clustering using Recency, Frequency, Monetary (RFM) metrics   |
-| **CLV Modeling**             | Predicts future customer value using ML                       |
-| **Sales Forecasting**        | Predicts future revenue using time series decomposition       |
+### 4. Customer Lifetime Value (CLV) Modeling
+- Predictive modeling of customer revenue potential
+- Feature importance: avg order value, frequency, recency
+- Visual breakdown of high-value vs low-value customer base
 
----
-
-## Local Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/yourusername/ecommerce-data-analytics-case-study.git
-cd ecommerce-data-analytics-case-study
-````
-
-### 2. Create and activate a virtual environment
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Launch the Streamlit app
-
-```bash
-streamlit run app.py
-```
+### 5. Sales Forecasting
+- Daily revenue forecasts using Prophet
+- Seasonal-trend decomposition and uncertainty intervals
+- Practical use cases for supply chain, budget planning, and marketing timing
 
 ---
 
-## Folder Structure
+## :dart: Skills & Concepts Demonstrated
+
+- **Statistical Testing**: z-tests, confidence intervals, simulated experiment runs  
+- **Machine Learning**: customer clustering, predictive modeling for CLV  
+- **Time Series Forecasting**: Prophet for demand prediction  
+- **Data Visualization**: custom layouts using Plotly and Streamlit  
+- **Dashboard Development**: modular, scalable, UX-optimized design  
+- **Business Strategy**: data-driven recommendations tied to real KPIs
+
+---
+
+## :file_folder: Project Structure
 
 ```
 ecommerce-data-analytics-case-study/
@@ -143,37 +84,23 @@ ecommerce-data-analytics-case-study/
 
 ---
 
-## ✨ Project Highlights
+## :bulb: Highlights
 
-### KPI Dashboard
-
-Track real-time sales performance, average order value, payment methods, and product category trends using interactive and static visualizations.
-
-### A/B Testing (Single Run)
-
-Analyze the impact of experimental treatments on conversion across product categories with statistical rigor using z-tests.
-
-### A/B Testing (Simulation-Based)
-
-Simulate 100+ test runs to evaluate lift distribution and reliability across segments under randomized conditions.
-
-### Customer Segmentation
-
-Apply KMeans clustering and PCA projection on RFM features to identify behavior-based customer groups.
-
-### Customer Lifetime Value Modeling
-
-Use regression techniques to predict CLV and visualize revenue concentration among top-value customers.
-
-### Sales Forecasting
-
-Build a Prophet-based model to forecast revenue trends, decompose seasonality, and evaluate forecast accuracy using MAE and RMSE.
+- Full-stack dashboard deployment using Streamlit Cloud  
+- Project simulates stakeholder deliverables: metrics, analysis, insights, and recommendations  
+- Built with reusability, extensibility, and business alignment in mind  
+- Focused on communication of insights, not just technical complexity
 
 ---
 
-## Business Value
+## :link: Try the Live App
 
-* Identifies top-performing product segments using A/B testing insights
-* Uncovers customer behavioral clusters for targeted marketing
-* Enables predictive CLV-based segmentation and budget planning
-* Forecasts sales trends to support strategic planning and campaign timing
+👉 [App](https://ecommerce-intelligence-dashboard.streamlit.app/)
+
+---
+
+## :bust_in_silhouette: About
+
+This project was built to demonstrate practical analytics capabilities to hiring managers and recruiters. It serves as a complete walkthrough of applied **data science and business intelligence** in an ecommerce setting.
+
+---
