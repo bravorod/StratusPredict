@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-A modular, production-grade dashboard for e-commerce data analytics, machine learning, and strategic decision-making.
+A modular, production-grade dashboard for e-commerce data analytics, machine learning, and decision-making.
 </p>
 
 <p align="center">
