@@ -38,8 +38,8 @@ selected = st.sidebar.radio("Navigate", [
 
 # KPI Dashboard
 if selected == "KPI Dashboard":
-    st.title("KPI Dashboard - Revenue & Performance Overview")
-    st.markdown("Gain a high-level understanding of revenue, orders, and average value over a time period. Use the filters to drill into key trends.")
+    st.title("📈 KPI Dashboard - Revenue & Performance Overview")
+    st.markdown("Gain a high-level understanding of revenue, orders, and average value over a time period. Use the filters to drill into key trends and performance drivers that shape business success.")
     st.markdown("---")
 
     date_range = st.date_input("Date Range", [df.purchase_date.min(), df.purchase_date.max()])
@@ -60,12 +60,13 @@ if selected == "KPI Dashboard":
     fig.update_layout(hovermode="x unified")
     st.plotly_chart(fig, use_container_width=True)
 
-    st.markdown("---")
+    st.markdown("\n\n")
     st.markdown("### Visual Breakdown")
     col1, col2 = st.columns(2)
     with col1:
         st.image(load_image("KPI_analysis", "payment_method_distribution.png"), caption="Payment Method Distribution")
         st.markdown("Diverse preferences—Crypto leads marginally, followed by Gift Cards and Credit/PayPal.")
+        st.markdown("\n\n")
         st.image(load_image("KPI_analysis", "distribution_of_purchase_amounts.png"), caption="Purchase Value Distribution")
         st.markdown("Heavy concentration under $100. High spikes indicate premium offerings or bulk buys.")
     with col2:
@@ -74,8 +75,9 @@ if selected == "KPI Dashboard":
 
 # A/B Testing (Single Run)
 elif selected == "A/B Testing (Single Run)":
-    st.title("A/B Testing - One-Time Experiment")
-    st.markdown("Measure effectiveness of a treatment using a controlled experiment.")
+    st.title("🧪 A/B Testing - One-Time Experiment")
+    st.markdown("Measure effectiveness of a treatment using a controlled experiment across different product categories.")
+    st.markdown("A/B testing remains a cornerstone of digital experimentation, enabling teams to isolate changes and quantify their impact with statistical rigor.")
     st.markdown("---")
     st.image(load_image("ab_testing", "ab_single_run_conversion_rates.png"), caption="Group A vs B Conversion Rates")
     st.image(load_image("ab_testing", "ab_single_run_lift_by_category.png"), caption="Lift by Product Category")
@@ -89,12 +91,13 @@ elif selected == "A/B Testing (Single Run)":
     - Scale the treatment for segments with robust improvement.
     - Reevaluate treatment's usability for Toys category.
     - Consider follow-up tests with new variants in the Beauty category.
+    - Leverage testing infrastructure to expand into price sensitivity and UX flow validation.
     """)
 
 # A/B Testing (Simulation)
 elif selected == "A/B Testing (Simulation)":
-    st.title("A/B Testing - Simulation Analysis")
-    st.markdown("Explore experiment stability through 100 bootstrapped simulations.")
+    st.title("📉 A/B Testing - Simulation Analysis")
+    st.markdown("Explore experiment stability through 100 bootstrapped simulations. This approach improves confidence intervals and highlights variability across iterations.")
     st.markdown("---")
     st.image(load_image("ab_testing", "ab_simulation_lift_distribution.png"), caption="Lift Distribution (100 Simulations)")
     st.markdown("""
@@ -107,12 +110,14 @@ elif selected == "A/B Testing (Simulation)":
     - Deploy on consistently high-lift categories.
     - Conduct qualitative follow-up with low-performing segments.
     - Use simulations to set expectations on performance variation.
+    - Extend to multi-arm bandit or Bayesian tests for real-time adaptation.
     """)
 
 # Customer Segmentation
 elif selected == "Customer Segmentation":
-    st.title("Customer Segmentation Analysis")
+    st.title("🧭 Customer Segmentation Analysis")
     st.markdown("Understand customer cohorts based on behavioral and monetary features.")
+    st.markdown("These segments guide hyper-personalized targeting and retention strategies, which are crucial for lifetime value maximization.")
     st.markdown("---")
     col1, col2 = st.columns(2)
     col1.image(load_image("customer_analytics", "customer_segments_by_behavior_clusters.png"), caption="Customer Behavior Clusters")
@@ -129,8 +134,9 @@ elif selected == "Customer Segmentation":
 
 # CLV Modeling
 elif selected == "Customer Lifetime Value (CLV) Modeling":
-    st.title("Customer Lifetime Value Modeling")
+    st.title("💰 Customer Lifetime Value Modeling")
     st.markdown("Forecast long-term revenue contribution by user based on early signals.")
+    st.markdown("By predicting CLV, marketers can allocate spend more efficiently and personalize outreach for highest ROI.")
     st.markdown("---")
     col1, col2 = st.columns(2)
     col1.image(load_image("customer_analytics", "feature_importance_plot.png"), caption="CLV Feature Importance")
@@ -144,12 +150,14 @@ elif selected == "Customer Lifetime Value (CLV) Modeling":
     - Focus ad targeting on early indicators of high CLV.
     - Reduce churn for mid-tier customers through proactive engagement.
     - Assign different retention budgets by segment.
+    - Incorporate CLV predictions into lookalike modeling and acquisition strategies.
     """)
 
 # Sales Forecasting
 elif selected == "Sales Forecasting":
-    st.title("Sales Forecasting - Prophet Model")
+    st.title("📊 Sales Forecasting - Prophet Model")
     st.markdown("Predict daily ecommerce sales and identify trends, cycles, and outliers.")
+    st.markdown("Time-series forecasting enables demand planning, budget allocation, and anomaly detection in retail environments.")
     st.markdown("---")
 
     col1, col2 = st.columns(2)
@@ -158,7 +166,7 @@ elif selected == "Sales Forecasting":
 
     st.subheader("Time Series Overview")
     st.image(load_image("forecasting", "daily_total_sales_time_series.png"), caption="Daily Sales")
-    st.markdown("Sales exhibit weekly cycles, seasonal promotions, and growth over time.")
+    st.markdown("Sales exhibit weekly cycles, seasonal promotions, and growth over time. Key inflection points reflect holidays or marketing pushes.")
 
     st.subheader("STL Decomposition")
     st.image(load_image("forecasting", "daily_total_sales_decomposition.png"), caption="Trend / Seasonality / Residual")
@@ -171,4 +179,5 @@ elif selected == "Sales Forecasting":
     - Align supply chain planning with expected peaks
     - Adjust workforce allocation ahead of demand spikes
     - Detect anomalies by comparing actuals to forecast confidence band
+    - Enable quarterly revenue projections for financial reporting
     """)
