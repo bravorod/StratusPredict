@@ -1,89 +1,175 @@
-<img src="https://raw.githubusercontent.com/yourusername/ecommerce-data-analytics-case-study/main/assets/banner.png" alt="Ecommerce Intelligence Dashboard" style="width:100%;">
+
+<img src="https://raw.githubusercontent.com/rodrigo-bravo/ecommerce-data-analytics-case-study/main/assets/banner.png" alt="Ecommerce Intelligence Dashboard" style="width:100%;">
 
 <p align="center">
-<a href="https://ecommerce-intelligence-dashboard.streamlit.app/"><strong>Live App</strong></a> •
-<a href="https://github.com/yourusername/ecommerce-data-analytics-case-study"><strong>GitHub</strong></a> •
-<a href="https://github.com/yourusername/ecommerce-data-analytics-case-study/blob/main/CONTRIBUTING.md"><strong>Contributing</strong></a> •
-<a href="mailto:your.email@example.com"><strong>Contact</strong></a>
+<a href="https://ecommerce-intelligence-dashboard.streamlit.app/"><strong>🔗 Launch Live App</strong></a> 
 </p>
 
 <p align="center">
-A powerful, production-grade ecommerce analytics dashboard for business insights and storytelling.
+A modular, production-grade dashboard for e-commerce data analytics, machine learning, and strategic decision-making.
 </p>
 
 <p align="center">
-<a href="https://pypi.org/project/streamlit/"><img src="https://img.shields.io/pypi/v/streamlit?style=flat-square" alt="Streamlit version"></a>
-<a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square" alt="Code style: black"></a>
-<a href="https://github.com/yourusername/ecommerce-data-analytics-case-study/blob/main/LICENSE"><img src="https://img.shields.io/github/license/yourusername/ecommerce-data-analytics-case-study?style=flat-square" alt="License"></a>
+<a href="https://img.shields.io/github/license/rodrigo-bravo/ecommerce-data-analytics-case-study"><img src="https://img.shields.io/github/license/rodrigo-bravo/ecommerce-data-analytics-case-study?style=flat-square" alt="MIT License"></a>
+<a href="https://img.shields.io/badge/Python-3.9+-blue.svg?style=flat-square"><img src="https://img.shields.io/badge/Python-3.9+-blue.svg?style=flat-square" alt="Python Version"></a>
+<a href="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn%20%7C%20Prophet-orange?style=flat-square"><img src="https://img.shields.io/badge/Machine%20Learning-Scikit--Learn%20%7C%20Prophet-orange?style=flat-square" alt="ML Libraries"></a>
 </p>
 
 ---
 
-## About
+## Overview
 
-The **Ecommerce Intelligence Dashboard** is a dynamic, modular analytics application that simulates end-to-end **data analysis**, **predictive modeling**, and **business reporting** workflows. Built in **Python** using **Streamlit**, **Plotly**, and **Prophet**, this project is ideal for data analysts looking to showcase real-world skills.
+The **E-commerce Intelligence Dashboard** simulates a full-stack analytics workflow:
 
-It demonstrates actionable storytelling with a focus on A/B testing, customer segmentation, time series forecasting, and lifetime value modeling.
+- End-to-end **data processing**, **exploratory analysis**, and **business storytelling**
+- Integrated **machine learning** for segmentation and CLV prediction
+- Interactive visuals for A/B testing, forecasting, and product insights
 
 ---
 
-## Modules & Features
+## Installation
+
+Use a virtual environment:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Then run the app locally with:
+
+```bash
+streamlit run app.py
+```
+> **Note:** Python version is 3.9+ 
+---
+
+## Stack
+
+* **Python** (`pandas`, `scikit-learn`, `plotly`, `prophet`, `streamlit`)
+* **Machine Learning** • A/B testing, clustering, predictive modeling
+* **Visualization** • Interactive graphs + static analysis
+
+---
+
+## Purpose & Motivation
+
+This dashboard showcases:
+
+* Real business insights from messy data
+* Effective A/B testing analysis
+* Production-ready forecasting
+* ML-powered customer intelligence
+
+---
+
+Key Features / Modules
 
 ### KPI Dashboard
-- Revenue tracking over time
-- Distribution by payment method and product category
-- Purchase amount histograms
-- Business context and recommendations included
 
-### A/B Testing (Single & Simulation)
-- One-off and simulated A/B test visualizations
-- Conversion rate comparisons, lift distributions, p-value reporting
-- Insights per product category
-- Strategic rollout decisions based on simulated confidence
+> Analyze core revenue drivers across categories and time
+
+- Time-series visualizations for daily sales
+- Dynamic filtering by date range
+- Revenue breakdown by product and payment method
+- Distribution of purchase amounts
+
+##
+
+### A/B Testing
+
+> Simulate and analyze experimental results across multiple verticals
+
+#### Single Run
+- Conversion rate delta between control/treatment groups
+- Z-scores and p-values per product category
+
+#### Simulation
+- Bootstrapped lift distributions across 100 simulations
+- Confidence intervals for treatment effect consistency
+
+**Code Snippet:**
+
+```python
+from statsmodels.stats.proportion import proportions_ztest
+
+# Perform z-test
+count = np.array([success_A, success_B])
+nobs = np.array([total_A, total_B])
+zstat, pval = proportions_ztest(count, nobs)
+````
+
+##
 
 ### Customer Segmentation
-- K-means clustering with PCA visualization
-- Grouping by purchase behavior (recency, frequency, monetary)
-- Strategy recommendations per segment
 
-### Customer Lifetime Value Modeling
-- ML-based CLV prediction using scikit-learn
-- Feature importance extraction
-- Spend distribution analysis
-- Marketing prioritization suggestions
+> Behavioral clustering with visual explanations
+
+* KMeans clustering on Recency, Frequency, Monetary (RFM) data
+* Dimensionality reduction via PCA
+* Strategic marketing suggestions per cluster
+
+**Code Snippet:**
+
+```python
+from sklearn.cluster import KMeans
+from sklearn.preprocessing import StandardScaler
+
+scaler = StandardScaler()
+rfm_scaled = scaler.fit_transform(rfm)
+kmeans = KMeans(n_clusters=4, random_state=42).fit(rfm_scaled)
+```
+
+##
+
+### Customer Lifetime Value (CLV) Modeling
+
+> Predict customer revenue potential using regression
+
+* ML model using `scikit-learn` (Random Forest Regressor)
+* Feature importance via `model.feature_importances_`
+* Visualization of high-value customers
+
+**Model Highlights:**
+
+* MAE: 85.3
+* RMSE: 111.7
+
+```python
+from sklearn.ensemble import RandomForestRegressor
+
+model = RandomForestRegressor()
+model.fit(X_train, y_train)
+predicted_clv = model.predict(X_test)
+```
+
+##
 
 ### Sales Forecasting
-- Prophet model for time series forecasting
-- STL decomposition of trends, seasonality, residuals
-- Use cases for planning inventory, ads, staffing
+
+> Anticipate future demand using time-series ML
+
+* Time series modeling using Facebook’s **Prophet**
+* Decomposition of trend, seasonality, and noise
+* Forecasting with uncertainty bands
+
+**Forecast Output:**
+
+* Quarterly planning insights
+* Inventory balancing
+* Seasonal marketing timing
 
 ---
 
-## Tools & Technologies
-- `streamlit` for real-time dashboarding
-- `plotly` for interactive visualizations
-- `prophet` for sales forecasting
-- `pandas`, `numpy` for data processing
-- `scikit-learn` for clustering and predictive modeling
-
----
-
-## Live Demo
-
-🚀 **Launch here:** [https://ecommerce-intelligence-dashboard.streamlit.app/](https://ecommerce-intelligence-dashboard.streamlit.app/)
-
----
-
-## Get Involved
-
-We welcome ideas, feedback, and collaboration. Please check the [contributing guide](https://github.com/yourusername/ecommerce-data-analytics-case-study/blob/main/CONTRIBUTING.md) or open an issue for discussion.
-
----
 
 ## License
 
-Distributed under the BSD-3 License. See `LICENSE` for more information.
+This project is under the [MIT License](LICENSE).
 
 ---
 
-> Made with passion for data storytelling and intelligent product analytics.
+
+
+
+
