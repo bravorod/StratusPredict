@@ -15,7 +15,6 @@
 
 <p align="center">
   <!-- Tech Stack Badges -->
-  <img src="https://img.shields.io/badge/Tech-Python%2C%20Pandas%2C%20scikit-learn%2C%20Prophet%2C%20Streamlit-orange" alt="Tech Stack" />
   <img src="https://img.shields.io/badge/python-3.9+-blue" alt="Python 3.9+" />
   <img src="https://img.shields.io/badge/scikit--learn-1.6+-orange" alt="scikit-learn 1.6+" />
   <img src="https://img.shields.io/github/stars/rodrigo-bravo/ecommerce-data-analytics-case-study" alt="GitHub Stars" />
@@ -57,9 +56,12 @@ streamlit run app.py
 
 ## Architecture
 
-<p align="center">
-  <img src="assets/architecture.png" alt="Architecture Diagram" width="600" />
-</p>
+<img
+  src="assets/architecture.png"
+  alt="Architecture Diagram"
+  style="width:100%; max-width:1000px; height:auto;"
+/>
+
 
 1. **Extract & Ingest**: daily CSV files → Pandas
 2. **Transform & Clean**: missing values, outlier filtering, date normalization
