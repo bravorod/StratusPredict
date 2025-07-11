@@ -1,8 +1,8 @@
 
-<h1 align="center">Ecommerce Intelligence Dashboard</h1>
+<h1 align="center">Analytics & Forecasting Platform</h1>
 
 <p align="center">
-  <em>A production-grade Streamlit app leveraging machine learning and analytics-driven KPI tracking for A/B testing, customer segmentation, CLV modeling & demand forecasting.</em>
+  <em>Production-ready platform delivering end-to-end e-commerce analytics and forecasting—featuring interactive KPI dashboards, ML-driven A/B test analysis, customer segmentation, CLV modeling, and demand forecasting to drive data-driven growth</em>
 </p>
 
 <p align="center">
